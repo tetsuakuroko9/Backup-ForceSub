@@ -19,7 +19,7 @@ User = Client(name="user-bot",
  
 @Bot.on_message(filters.private & filters.command("start"))
 async def start(bot, message):
-    await message.reply(f"<b>Hello {message.from_user.mention}!\nI will forward all files from your groups to backup channel\nAlso you can use me as a ForceSubscribe Bot!\n\nYou can make your own bot from this [SOURCE CODE](https://github.com/arun017s/Backup-ForceSub)</b>",
+    await message.reply(f"<b>Hello {message.from_user.mention}!\nI will forward all files from your groups to backup channel!</b>",
                         disable_web_page_preview=True)
 
 @Bot.on_message(filters.chat(GROUPS))
